@@ -59,6 +59,16 @@ h1, h2 {
   margin: 0;
 }
 
+h1.md {
+  background-image: linear-gradient(to right, rgb(91, 87, 149), transparent);
+  color: white;
+  font-weight: 600;
+  font-family: vcr_osd_mono, sans-serif;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .pb {
   padding-bottom: 1rem;
 }
@@ -122,8 +132,6 @@ h1 {
   padding: 30px;
   padding-top: 0;
 
-  display: relative;
-
   overflow-wrap: break-word; 
   
   min-height: 120vh;
@@ -131,6 +139,14 @@ h1 {
   position: relative;
   border-left: 3px solid gray;
   border-right: 3px solid  gray;
+}
+
+a img {
+  display: block; 
+}
+
+a {
+  display: inline-block;
 }
 
 pre {
@@ -160,19 +176,16 @@ pre {
   right: 0;
 }
 
-#sidebar {
+#sidebar, .sidebar-style {
 
   max-height: 400px; 
-
   font-family: vcr_osd_mono;
-  margin-top: 4rem;
   width: 250px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 12px;
   padding-bottom: 12px;
-  position: relative;
   background-color: white;
   border: 1px solid black;
 }
