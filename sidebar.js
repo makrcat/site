@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <div class="navlink-s">
       <div class="navlink">Home</div>
+      <div class="navlink">About</div>
       <div class="navlink">Bloggy</div>
       <div class="navlink">Photographs ^o^</div>
       <div class="navlink">Drawing</div>
