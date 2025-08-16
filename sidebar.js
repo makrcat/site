@@ -8,15 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
     <div class="navlink-s">
-      <div class="navlink">Home</div>
-      <div class="navlink">About</div>
-      <div class="navlink">Bloggy</div>
-      <div class="navlink">Photographs ^o^</div>
-      <div class="navlink">Drawing</div>
-      <div class="navlink">Awesome cool stuff shrines</div>
-      <div class="navlink">Room</div>
-      <div class="navlink">Neighborhood!</div>
-      <div class="navlink">Guestbook</div>
+      <a class="navlink" href="/index.html">Home</a>
+      <a class="navlink" href="/about.html">About</a>
+      <a class="navlink">Bloggy</a>
+      <a class="navlink">Photographs ^o^</a>
+      <a class="navlink">Drawing</a>
+      <a class="navlink">Awesome cool stuff shrines</a>
+      <a class="navlink">Room</a>
+      <a class="navlink">Neighborhood!</a>
+      <a class="navlink">Guestbook</a>
     </div>
     `;
 
