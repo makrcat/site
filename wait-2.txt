@@ -1,0 +1,22 @@
+Here are ever more flashy things.
+        <br><br>
+
+
+        <img src="button/long-ish-stamps/yes/oceansprotectyea.png" 
+        style="width: 150px; height: auto;">
+        <img src="button/long-ish-stamps/omgfish3.png">
+
+        <img src="button/long-ish-stamps/crayon.gif" >
+        <img src="button/long-ish-stamps/dandelioncrayon.gif" >
+
+        <img src="button/long-ish-stamps/bored.gif" >
+        <img src="button/long-ish-stamps/squint.gif" >
+
+        <img src="button/long-ish-stamps/where.gif" >
+        <img src="button/long-ish-stamps/fml.gif" >
+        <img src="button/long-ish-stamps/cheez.webp" >
+
+        <img src="button/long-ish-stamps/miku.png" >
+        <img src="button/long-ish-stamps/zelda.png"> 
+
+        <img src="button/long-ish-stamps/clovers.gif"> 
