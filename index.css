@@ -1,7 +1,8 @@
 #todo-note {
   position: absolute;
   top: 300px;
-  right: -140px; /* moved closer to right */
+  right: -140px;
+  /* moved closer to right */
   width: 200px;
   height: 200px;
 
@@ -21,11 +22,12 @@
   transform: rotate(5deg);
   z-index: 10;
 
-border: 1px solid rgba(92, 64, 51, 0.4);
+  border: 1px solid rgba(92, 64, 51, 0.4);
 
   overflow-wrap: break-word;
 
-  transition: all 0.3s ease; /* smooth movement */
+  transition: all 0.3s ease;
+  /* smooth movement */
 }
 
 .todo-note:hover {

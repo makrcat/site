@@ -1,0 +1,204 @@
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.ipod {
+    position: absolute;
+    top: 80px;
+    right: -170px;
+    z-index: 3;
+    width: 150px;
+    height: 250px;
+
+    background-color: rgb(245, 245, 245);
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+    transform: rotate(-5deg) translateY(-15px);
+
+    border-radius: 20px;
+}
+
+
+
+
+.ipod::before {
+
+    box-shadow:
+        inset 5px 0 6px -2px rgb(184, 184, 184),
+        inset 0 -5px 6px -2px rgb(184, 184, 184),
+        inset 0 5px 6px -2px rgb(184, 184, 184),
+        inset -5px 0 6px -2px white;
+
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+
+    filter: blur(0.5px);
+    z-index: 0;
+}
+
+
+
+.ipod .inner {
+    margin-top: 4%;
+    margin-left: 4%;
+    height: 95%;
+    width: 92%;
+    background: transparent;
+    border: none;
+
+    border-radius: 10px;
+    filter: blur(1px);
+
+    box-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.05),
+        inset 5px 0 2px -2px rgba(255, 255, 255);
+}
+
+
+.wheel .p {
+cursor: pointer;
+}
+
+.wheel {
+
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100px;
+    height: 100px;
+    background: #cfcfcf;
+    border-radius: 50%;
+
+    box-shadow:
+      inset 0 0 20px (0, 0, 0, 0.4);
+
+}
+
+
+.wheel::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    background: rgb(245, 245, 245);
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 5px rgba(255, 255, 255, 0.6),
+        inset 0 0 5px rgba(0, 0, 0, 0.2),
+        0 0 20px (0, 0, 0, 0.4);
+}
+
+.screen-outer {
+
+  cursor: pointer;
+
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 3px;
+    background: linear-gradient(to right, rgb(179, 195, 221), rgb(206, 223, 244));
+
+    box-shadow: 1px 0 2px 0px rgba(0, 0, 0, 0.4) inset,
+        -1px 0 2px 0px rgba(0, 0, 0, 0.4) inset,
+
+        1px 0 1px 0 rgba(0, 0, 0, 0.6),
+        -1px 0 1px 0 rgba(0, 0, 0, 0.6);
+
+
+    height: 33%;
+    width: 70%;
+
+    padding: 2px;
+}
+
+
+.screen-content {
+  font-family: 'VT323', sans-serif;
+  font-size: 12px;
+}
+
+
+/*
+.screen-screen {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  background-color: lightgray;
+
+  border-radius: 3px;
+}
+
+
+.screen-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      rgba(18,16,16,0.0) 50%, 
+      rgba(18,16,16,0.25) 50%
+    ),
+    linear-gradient(
+      90deg, 
+      rgba(255,0,0,0.06), 
+      rgba(0,255,0,0.03), 
+      rgba(0,0,255,0.06)
+    );
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+.screen-screen::after {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(18,16,16,0.9);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 3;
+  
+
+  animation: flicker 0.15s infinite;
+
+}
+
+
+
+@keyframes flicker {
+  0% { opacity: 0; }
+  10% { opacity: 0.1; }
+  20% { opacity: 0; }
+  30% { opacity: 0.05; }
+  40% { opacity: 0; }
+  50% { opacity: 0.08; }
+  60% { opacity: 0; }
+  70% { opacity: 0.12; }
+  80% { opacity: 0; }
+  90% { opacity: 0.05; }
+  100% { opacity: 0; }
+}
+*/
