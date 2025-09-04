@@ -1,0 +1,112 @@
+
+/* nav */
+a img {
+  display: block; 
+}
+
+a {
+  display: inline-block;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.flexthing {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;    
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+
+.big-candy-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.smaller-candy-wrapper {
+  width: 65%;
+  margin-left: 30px;
+  padding: 30px;
+  padding-top: 0;
+
+  overflow-wrap: break-word; 
+  
+  min-height: 120vh;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-left: 3px solid gray;
+  border-right: 3px solid  gray;
+
+
+  z-index: 1;
+}
+
+.smaller-candy-wrapper::before,
+.smaller-candy-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background-image: radial-gradient(circle, black 1.5px, transparent 1.5px);
+  background-size: 100% 16px;
+  background-repeat: repeat-y;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.smaller-candy-wrapper::before {
+  left: 0;
+}
+
+.smaller-candy-wrapper::after {
+  right: 0;
+}
+
+#sidebar, .sidebar-style {
+  font-family: vcr_osd_mono;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+.navlink-s {
+  border-top-style: double;
+  border: 3px double gray;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  height: auto;
+}
+
+
+.navlink {
+  font-size: 14px;
+  background-color: rgb(255, 205, 211);
+  padding: 2px 6px;
+  line-height: 2;
+}
+
+.navlink:hover {
+  background-image: linear-gradient(to right, transparent,  rgb(255, 255, 255, 0.6));
+  cursor: pointer;
+}

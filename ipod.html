@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iPod Widget</title>
+    <link rel="stylesheet" href="ipod.css">
+    <style>
+        body {
+            margin: 0;
+            background: transparent;
+            /* so iframe background is invisible */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ipod" id="ipod">
+        <div class="inner"></div>
+
+        <div class="screen-outer">
+            <div class="screen-content">
+                <div style="position: relative; width: 100%;">
+                    <iframe class="monochrome-invert" data-testid="embed-iframe" style="border-radius:4px;
+                   position: absolute;
+                   transform: scale(0.75);
+                   transform-origin: top left;
+                   left: -10px; top: -150px"
+                        src="https://open.spotify.com/embed/playlist/6fFKrQ38TA8Eer39T5Hq3v?utm_source=generator"
+                        width="240" height="353" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wheel" style="font-size: 12px">
+            <div style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); color: white">MENU</div>
+            <div style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); color: white; font-size: 14px;"
+                class="p">⏭</div>
+            <div style="position: absolute; left: 5px; top: 50%; transform: translateY(-50%); color: white; font-size: 14px;"
+                class="p">⏮</div>
+            <div style="position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); color: white; font-size: 14px;"
+                class="p">⏯</div>
+        </div>
+
+        <div class="button" style="position: absolute; bottom: 38%; right: 12px" onclick="openNewWindow()">
+            <span style="color: white"><strong>↗</strong></span>
+        </div>
+
+
+    </div>
+
+    <script>
+        function openNewWindow() {
+            const ipod = document.getElementById("ipod");
+            window.open("/ipod.html", "_blank", "width=180,height=320,left=" + (window.screenX + 50) + ", top=" + (window.screenY + 50));
+
+            ipod.innerHTML = `
+                <div style="
+      all: unset;
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      border: 4px dashed white;
+      font-family: 'Arial';
+      font-size: 14px;
+      box-sizing: border-box;
+      text-align: center;
+  ">
+      opened in new window
+  </div>
+            `;
+        }
+    </script>
+
+</body>
+
+</html>

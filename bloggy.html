@@ -2,73 +2,89 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The web site of parasoluvia</title>
-  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site </title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="bloggy.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
 
-  <div style="width:100%; display: flex; justify-content: center; padding: 10px; margin-bottom: 20px;
-  background-color: white;  ">
-    <h1>blargy</h1>
-  </div>
-
-  <div class="big-candy-wrapper">
-    <div id="sidebar"></div>
-
-    <div class="smaller-candy-wrapper">
+    <div class="big-candy-wrapper">
 
 
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-      </div>
+        <div class="sidebar-wrapper">
 
-      <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-      </div>
+            <div>
+                <div class="image-overlay-wrapper" style="
+            height: 80px">
+                    <div class="flexthing" style="bottom: 120px; left: 67%">
 
-      <div id="Paris" class="tabcontent">
-         <h1 class="fontparty pb">Hello Welcome</h1>
-        <p>Paris is the capital of France.</p>
-      </div>
 
-      <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+                        <div class="dreamer" style="
+                    margin: 0 auto;
+                    font-size: 40px; 
+                    color: black;
+                    margin-top: 0px">
+                            <span>----- Typewriter Log -----</span>
 
-      <script>
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-      </script>
 
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="blog-nav" id="blog-nav">
+
+                
+                </div>
+
+
+            </div>
+
+            <button class="bottom-button" onclick="window.location.href='/index.html'">
+                ← Go back
+            </button>
+        </div>
+
+        <div class="smaller-candy-wrapper">
+
+
+            <h1 style="
+            margin: 0 auto;
+            text-decoration: underline wavy skyblue 3px; 
+            text-underline-offset: 6px; font-family: Arial; letter-spacing: 0.1em;
+            color: rgb(38, 91, 111);
+            margin-bottom: 20px;
+            margin-top: 20px" class="title">
+                WOAH a title???
+            </h1>
+
+
+            <pre class="stuff">Blog blog... what should I blog...
+</pre>
+
+
+        </div>
 
     </div>
 
-  </div>
+    <img src="assets/pen.png" 
+    style="position: fixed; bottom: 50px; right: 10px;
+    z-index: 999; height: 250px; width: auto;
+    transform: rotate(-30deg);">
 
-  <script src="sidebar.js"></script>
 
-  <script>
-    openCity(event, 'London')
-  </script>
-
+    <script src="bloggysidebar.js"></script>
 </body>
 
 </html>

@@ -16,7 +16,7 @@ body::before {
   height: 100%;
   background-image: url("face.png");
   opacity: 1;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 
   /*
@@ -72,10 +72,23 @@ ul li {
 }
 
 .the-interest {
-  height: 100px;
-  width: 100px;
   border: 1px solid gray;
   border-radius: 4px;
   display: block;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 300px;
+}
+
+.the-interest img {
+  margin: 5px;
+  object-fit: contain;
+  overflow: clip;
+}
+
+.the-interest span {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }

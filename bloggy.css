@@ -1,0 +1,202 @@
+@font-face {
+    font-family: dreamer_TM;
+    src: url(font/dreamer_TM.ttf);
+}
+
+
+/* nav */
+a img {
+    display: block;
+}
+
+a {
+    display: inline-block;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dreamer {
+    font-family: 'dreamer_TM', cursive;
+    font-weight: unset;
+}
+
+
+
+
+.flexthing {
+    bottom: 40px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+
+.big-candy-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.smaller-candy-wrapper {
+    width: 75%;
+    margin-left: 30px;
+
+    padding: 30px;
+
+    padding-top: 0;
+
+    margin: 0 auto;
+
+    overflow-wrap: break-word;
+
+    min-height: 120vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-left: 3px solid gray;
+    border-right: 3px solid gray;
+
+
+    z-index: 1;
+
+}
+
+.smaller-candy-wrapper::before,
+.smaller-candy-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background-image: radial-gradient(circle, black 1.5px, transparent 1.5px);
+    background-size: 100% 16px;
+    background-repeat: repeat-y;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.smaller-candy-wrapper::before {
+    left: 0;
+}
+
+.smaller-candy-wrapper::after {
+    right: 0;
+}
+
+.bottom-button {
+    width: 120px;
+    height: 30px;
+
+    border: 2px dashed pink;
+    border-radius: 1rem;
+    background-color: white;
+
+    font-size: 14px;
+
+    margin: 0 auto;
+    /* horizontal */
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.bottom-button:hover {
+    background-color:rgba(228, 171, 180, 0.2);
+}
+
+
+
+.sidebar-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    justify-content: space-between;
+    background: white;
+
+    width: 300px;
+
+    border-right: 1px solid rgb(163, 173, 182);
+}
+
+.blog-nav {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+
+.blog-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: monospace;
+}
+
+.blog-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px dashed #aaa;
+}
+
+.date {
+    color: #555;
+}
+
+a.topic {
+    line-height: unset;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    display: inline-block;
+
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-align: right;
+    text-decoration: none;
+}
+
+a.topic:hover {
+    color: brown;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+body {
+    margin-left: 300px;
+    background-image: url('assets/fishwall.png');
+    background-size: 500px auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    background-color: rgba(208, 223, 243, 0.6);
+    background-blend-mode: soft-light;
+}
+
+.stuff {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
