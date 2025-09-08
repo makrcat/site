@@ -16,7 +16,7 @@
   color: rgb(81, 58, 42);
 
   border-radius: 1rem;
-  background-image: url('todo.jpg');
+  background-image: url('assets/todo.jpg');
   background-size: cover;
   background-position: center;
   transform: rotate(5deg);

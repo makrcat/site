@@ -4,6 +4,7 @@
 }
 
 
+
 /* nav */
 a img {
     display: block;
@@ -69,6 +70,8 @@ pre {
 
     z-index: 1;
 
+    color: #444444;
+
 }
 
 .smaller-candy-wrapper::before,
@@ -83,6 +86,9 @@ pre {
     background-repeat: repeat-y;
     z-index: 1;
     pointer-events: none;
+
+
+    background-color: rgb(252, 235, 188);
 }
 
 .smaller-candy-wrapper::before {
@@ -128,7 +134,7 @@ pre {
     left: 0;
 
     justify-content: space-between;
-    background: white;
+    background-color: white;
 
     width: 300px;
 
@@ -192,7 +198,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
 
-    background-color: rgba(208, 223, 243, 0.6);
+    background-color: rgba(208, 223, 243, 0.5);
     background-blend-mode: soft-light;
 }
 

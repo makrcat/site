@@ -1,0 +1,46 @@
+@font-face {
+    font-family: dreamer_TM;
+    src: url(font/dreamer_TM.ttf);
+}
+
+/* nav */
+a img {
+    display: block;
+}
+
+a {
+    display: inline-block;
+}
+
+
+.bottom-button {
+    width: 120px;
+    height: 30px;
+
+    border: 2px dashed pink;
+    border-radius: 1rem;
+    background-color: white;
+
+    font-size: 14px;
+
+    margin: 0 auto;
+    /* horizontal */
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.bottom-button:hover {
+    background-color:rgba(228, 171, 180, 0.2);
+}
+
+body {
+    background: none;
+}
+
+
+.dreamer {
+    font-family: 'dreamer_TM', cursive;
+    font-weight: unset;
+}
