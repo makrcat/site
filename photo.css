@@ -13,15 +13,79 @@
   position: relative;
 }
 
+button.tableofcontents {
+  border-radius: 50px 0 0 50px;
+  border: 0;
+  padding: 12px;
+  padding-left: 16px;
+
+  font-size: 24px;
+  padding-right: 24px;
+}
+
+.blog-nav {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+
+.blog-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: monospace;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px dashed #aaa;
+
+  min-height: 28px;
+}
+
+.date {
+  color: #555;
+}
+
+a.topic {
+  line-height: unset;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  display: inline-block;
+
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+a.topic:hover {
+  color: brown;
+}
+
+a:visited {
+  color: inherit;
+}
+
 
 .photo img {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   display: block;
   border-radius: 2px;
 }
 
 .photo div {
   overflow: scroll;
+  max-height: 300px;
 }
 
 .desc {
@@ -57,6 +121,7 @@ word-break: break-all;
   border-bottom: none;
 }
 
+
 .photo::after {
   content: "";
   position: absolute;
@@ -75,4 +140,56 @@ word-break: break-all;
 .photo span.date {
   margin-top: -4px;
   margin-bottom: 2px;
+}
+
+.book > div {
+  box-sizing: border-box;
+}
+
+
+.book {
+  border: 2px solid lightblue;
+  height: 800px;
+  width: 1200px;
+  left: 14%;
+
+  display: flex;
+  flex-direction: row;
+
+  z-index: 11000;
+  position: absolute;
+}
+
+#page1 {
+  border-right: 1px dashed lightblue;
+
+  background: rgb(244, 248, 250);
+
+  width: 50%;
+  padding: 20px;
+
+  z-index: 9;
+}
+
+#page2 {
+  width: 50%;
+  padding: 20px;
+
+  z-index: 9;
+}
+
+.tabs {
+  background-color: pink;
+  height: 400px;
+  width: 40px;
+
+  position: absolute;
+  left: calc(14% - 40px);
+  top: 10%;
+  z-index: 0;
+
+  padding: 0;
+  margin: 0;
+  padding: 0;
+
 }
