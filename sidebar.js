@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="navlink" href="/index.html">Home</a>
       <a class="navlink" href="/about.html">About</a>
       <a class="navlink" href="/bloggy.html">Bloggy</a>
-      <a class="navlink">Photographs ^o^</a>
+      <a class="navlink" href="/photog.html">Photographs ^o^</a>
       <a class="navlink">Drawing</a>
       <a class="navlink">Awesome cool stuff shrines</a>
       <a class="navlink">Room</a>

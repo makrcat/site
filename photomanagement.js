@@ -32,8 +32,32 @@ function loadfindpage(pageInt) {
         } else {
             pagesets[i].style.display = "none";
         }
+
+        let idx;
+        if (i > 0) idx = i;
+        else idx = "index";
+
+        const topRight = document.createElement('div');
+        topRight.textContent = idx;
+        topRight.className = 'page-index-marker';
+        topRight.style.position = 'absolute';
+        topRight.style.top = '0';
+        topRight.style.right = '0';
+
+        const bottomRight = document.createElement('div');
+        bottomRight.textContent = idx;
+        bottomRight.className = 'page-index-marker';
+        bottomRight.style.position = 'absolute';
+        bottomRight.style.bottom = '0';
+        bottomRight.style.right = '0';
+
+
+        pagesets[i].appendChild(topRight);
+        pagesets[i].appendChild(bottomRight);
     }
 }
+
+// also assign page numbers
 
 function updateURL(page) {
     const newUrl = `${window.location.pathname}?page=${page}`;
@@ -47,7 +71,7 @@ function replacePage(r, n) {
     loadPageImages(pagesets[n]);
 }
 
-function forward() {
+function tryforward() {
     if (pageInt < pagesets.length - 1) {
         replacePage(pageInt, pageInt + 1);
         pageInt++;
@@ -55,7 +79,7 @@ function forward() {
     }
 }
 
-function backward() {
+function trybackward() {
     if (pageInt > 0) {
         replacePage(pageInt, pageInt - 1);
         pageInt--;
@@ -68,9 +92,21 @@ window.onload = function () {
 }
 
 function loadPageImages(bookpagesetEL) {
-  const imgs = bookpagesetEL.querySelectorAll("img[data-src]");
-  imgs.forEach(img => {
-    img.src = img.dataset.src; // load
-    img.removeAttribute("data-src"); // clean ?
-  });
+    const imgs = bookpagesetEL.querySelectorAll("img[data-src]");
+    imgs.forEach(img => {
+        img.src = img.dataset.src; // load
+        img.removeAttribute("data-src"); // clean ?
+    });
 }
+
+window.addEventListener('keydown', (event) => {
+    console.log("Pressed:", event.key);
+
+    if (event.key === 's' || event.key === 'S') {
+        trybackward();
+    }
+
+    if (event.key === 'f' || event.key === 'F') {
+        tryforward();
+    }
+});

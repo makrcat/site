@@ -1,8 +1,14 @@
+@font-face {
+  font-family: omorifont;
+  src: url(font/OMORI_GAME2.ttf);
+  /* url of the font */
+}
 
 .photo {
   width: 220px;
-  padding: 10px 10px 35px 10px; /* extra padding on bottom */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 10px 10px 35px 10px;
+  /* extra padding on bottom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: inline-block;
   text-align: center;
   border-radius: 4px;
@@ -11,6 +17,16 @@
   background-image: linear-gradient(to bottom right, white, rgb(236, 236, 236));
 
   position: relative;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+
+
+.omorifont {
+  font-family: omorifont, Arial;
 }
 
 button.tableofcontents {
@@ -29,11 +45,6 @@ button.tableofcontents {
 
 button.tableofcontents:hover {
   transform: translateX(-10px);
-}
-
-.blog-nav {
-  margin-left: 20px;
-  margin-right: 10px;
 }
 
 
@@ -97,7 +108,10 @@ a:visited {
 }
 
 .desc {
-    padding: 10px 10px 10px 10px; /* extraaaa padding on bottom */
+  padding: 10px 10px 10px 10px;
+  /* extraaaa padding on bottom */
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .photo span {
@@ -109,10 +123,11 @@ a:visited {
   font-size: 14px;
   margin-top: 4px;
 
-word-break: break-all;
+  word-break: break-word;
   height: 40px;
 }
 
+/*
 .photo::before {
   content: "";
   position: absolute;
@@ -144,15 +159,17 @@ word-break: break-all;
 
   border-radius: 5px;
 }
+  */
 
 .photo span.date {
   margin-top: -4px;
   margin-bottom: 2px;
 }
 
-.book > div {
+.book>div {
   box-sizing: border-box;
 }
+
 
 
 .book {
@@ -170,19 +187,12 @@ word-break: break-all;
 
 #page1 {
   border-right: 1px dashed lightblue;
-
   background: rgb(244, 248, 250);
-
-  width: 50%;
-  padding: 20px;
-
-  z-index: 9;
 }
 
-#page2 {
+#page1, #page2 {
   width: 50%;
-  padding: 20px;
-
+  padding: 20px 40px;
   z-index: 9;
 }
 
@@ -192,11 +202,58 @@ word-break: break-all;
 
   position: absolute;
   left: calc(10% - 40px);
-  top: 10%;
+  top: calc(10% + 70px);
   z-index: 0;
 
   padding: 0;
   margin: 0;
   padding: 0;
 
+}
+
+.omoributton {
+  position: relative;
+  /* needed so ::before can be positioned relative to this */
+  background: black;
+  color: white;
+  border: none;
+  font-family: sans-serif;
+  cursor: pointer;
+
+  padding-top: 5px;
+
+  margin: 4px;
+
+  width: 50px;
+  height: 50px;
+
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+
+  position: relative;
+}
+
+.omoributton::before {
+  content: "";
+  /* makes it render */
+  position: absolute;
+  top: -4px;
+  /* offset to peek out behind */
+  left: -4px;
+  right: -4px;
+  /* expands behind */
+  bottom: -4px;
+  background: white;
+  border: 1px solid black;
+  z-index: -1;
+  /* ensures it's behind the button */
+}
+
+.page-index-marker {
+  margin-right: 16px;
+  margin-bottom: 4px;
+
+  font-size: 28px;
+  font-family: omorifont, Arial;
 }

@@ -19,6 +19,8 @@
 
 <body>
 
+    <div style="height: 70px; width: 100%; background-color: pink"></div>
+
     <!--note to self: scrollable page-->
 
     <button class="bottom-button" onclick="window.location.href='/index.html'">
@@ -26,13 +28,26 @@
     </button>
 
 
-    <button class="bottom-button" onclick="backward()">
-        Go back
-    </button>
+    <div style="position: fixed;  top: 0;
+    width: 100%; height: 70px; background-color: white;
+    border-bottom: 1px solid black; z-index: 999999999;">
 
-    <button class="bottom-button" onclick="forward()">
-        Go foward
-    </button>
+        <div style="position: absolute; right:10%; top: 5px;
+        display: flex; flex-direction: row; gap: 6px; align-items: flex-end;">
+
+            <span class="omorifont" style="font-size: 36px; margin-right: 5px">Navigation</span>
+
+            <button class="omoributton" onclick="trybackward()">
+                S
+                <img src="small/hand_backward.png">
+            </button>
+
+            <button class="omoributton" onclick="tryforward()">
+                F
+                <img src="small/hand_forward.png">
+            </button>
+        </div>
+    </div>
 
 
     <div class="tabs">
@@ -40,6 +55,7 @@
     </div>
 
     <br>
+
     <div class="book">
 
         <div id="page1">
@@ -59,17 +75,20 @@
         </div>
         <div id="page2">
 
-            <div class="blog-nav">
-
+            <div style="font-family: monospace">
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <h1>Photographs</h1>
                     <span
                         style="background-color: skyblue; display: inline-block; color: white; padding: 0 6px; border-radius: 4px">Now
                         with video technology!</span>
                 </div>
+
                 <p style="margin-top: 0px">Welcome to my archive of events !! These are organized by the date the
                     picture was taken, not the time
                     I put them in to this website. Although I might include that as a footnote.</p>
+            </div>
+
+            <div class="blog-nav">
 
                 <div class="blog-item">
                     <span class="date">2023-4--</span>
@@ -150,64 +169,27 @@
     <div class="book">
 
         <div id="page1">
+            <center>
+                <h1>Japan (2024 summer)</h1>
+            </center>
 
             <div class="photo desc">
 
                 <div>
-                    <span class="date">04/01/2009</span>
-                    <img data-src="assets/selfieish.jpg">
+                    <span class="date">06</span>
+                    <img data-src="assets/candy.jpg">
 
-                    <span class="sub">Hey did you know this image has a scrollbar aahhaah oh dear lord i hope this doesn
-                        tlook
-                        like shit auhhghh</span>
+                    <span class="sub">kohakutou candy, or crystal candy. it was yummy</span>
                 </div>
             </div>
 
             <div class="photo desc">
 
                 <div>
-                    <span class="date">04/01/2009</span>
-                    <img data-src="assets/selfieish.jpg">
+                    <span class="date">06</span>
+                    <img data-src="assets/rain.jpg">
 
-                    <span class="sub">Hey did you know this image has a scrollbar aahhaah oh dear lord i hope this doesn
-                        tlook
-                        like shit auhhghh</span>
-                </div>
-            </div>
-
-            <div class="photo desc">
-
-                <div>
-                    <span class="date">04/01/2009</span>
-                    <img data-src="assets/selfieish.jpg">
-
-                    <span class="sub">Hey did you know this image has a scrollbar aahhaah oh dear lord i hope this doesn
-                        tlook
-                        like shit auhhghh</span>
-                </div>
-            </div>
-
-            <div class="photo desc">
-
-                <div>
-                    <span class="date">04/01/2009</span>
-                    <img data-src="assets/selfieish.jpg">
-
-                    <span class="sub">Hey did you know this image has a scrollbar aahhaah oh dear lord i hope this doesn
-                        tlook
-                        like shit auhhghh</span>
-                </div>
-            </div>
-
-            <div class="photo desc">
-
-                <div>
-                    <span class="date">04/01/2009</span>
-                    <img data-src="assets/selfieish.jpg">
-
-                    <span class="sub">Hey did you know this image has a scrollbar aahhaah oh dear lord i hope this doesn
-                        tlook
-                        like shit auhhghh</span>
+                    <span class="sub">some pretty rain from an AirBNB</span>
                 </div>
             </div>
 
