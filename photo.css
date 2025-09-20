@@ -38,9 +38,12 @@ button.tableofcontents {
   font-size: 24px;
   padding-right: 24px;
 
-  background-color: rgba(29, 154, 173, 0.535);
+  background-image: linear-gradient(to right, rgba(0, 128, 128, 0.2), 
+   rgba(0, 128, 128, 0.4), teal);
   cursor: pointer;
   transition: 0.25s ease-in-out;
+
+  color: rgb(0, 63, 63);
 }
 
 button.tableofcontents:hover {
@@ -83,6 +86,8 @@ a.topic {
 
   text-align: center;
   text-decoration: none;
+
+  color: black;
 }
 
 a.topic:hover {
@@ -220,18 +225,21 @@ a:visited {
   font-family: sans-serif;
   cursor: pointer;
 
+  padding: 4px 8px;
+
   padding-top: 5px;
 
   margin: 4px;
+  position: relative;
+}
 
+.squori {
   width: 50px;
   height: 50px;
 
   font-family: Arial;
   font-size: 20px;
   font-weight: bold;
-
-  position: relative;
 }
 
 .omoributton::before {

@@ -180,6 +180,8 @@ a.topic {
 
     text-align: right;
     text-decoration: none;
+
+    color: black;
 }
 
 a.topic:hover {
