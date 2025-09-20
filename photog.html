@@ -14,6 +14,7 @@
 
     <link href="photog.css" rel="stylesheet" type="text/css" media="all">
     <link href="photo.css" rel="stylesheet" type="text/css" media="all">
+    <script src="photomanagement.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,14 @@
 
     <button class="bottom-button" onclick="window.location.href='/index.html'">
         ← Go back
+    </button>
+
+    <button class="bottom-button" onclick="forward()">
+         Go foward
+    </button>
+
+    <button class="bottom-button" onclick="backward()">
+        Go back
     </button>
 
 
@@ -53,10 +62,12 @@
 
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <h1>Photographs</h1>
-                    <span style="background-color: skyblue; display: inline-block; color: white; padding: 0 6px; border-radius: 4px">Now with video technology!</span>
+                    <span
+                        style="background-color: skyblue; display: inline-block; color: white; padding: 0 6px; border-radius: 4px">Now
+                        with video technology!</span>
                 </div>
-                <p style="margin-top: 0px">Welcome to my archive of events !! These are organized by date, not the time
-                    I put them in. Although I might include that as a footnote.</p>
+                <p style="margin-top: 0px">Welcome to my archive of events !! These are organized by the date the picture was taken, not the time
+                I put them in to this website. Although I might include that as a footnote.</p>
 
                 <div class="blog-item">
                     <span class="date">2023-4--</span>
@@ -65,7 +76,13 @@
                 </div>
 
                 <div class="blog-item"></div>
-                <div class="blog-item"></div>
+                <div class="blog-item">
+                    <span>
+                        <span style="font-family: Arial">☆</span> 
+                        Specific category
+                        <span style="font-family: Arial">☆</span> 
+                    </span>
+                </div>
 
                 <div class="blog-item">
                     <span class="date">2013----</span>
@@ -107,6 +124,109 @@
 
         </div>
 
+    </div>
+
+    <!--
+
+    onload: 
+    
+    just directly and simply go to the ?page=n url (and then, like it does the whole thing of finding the images to load.)
+
+    This is uh.. im gonna have a bunch of divs with "book", 
+
+    and sequence the page numbers on the corner of all them.
+
+    and only show the page number of the one that is getting fetched.
+    
+
+    then on click (of the buttons)
+    and change the images to load when they are active. 
+    "goto" that page when it is clicked, and UPDATE history.pushstate.
+    
+    -->
+
+    <div class="book">
+
+        <div id="page1">
+
+            <div class="photo desc">
+
+                <div>
+                    <span class="date">04/01/2009</span>
+                    <img src="assets/selfieish.jpg">
+
+                    <span class="sub">THE SECOND COMING</span>
+                </div>
+            </div>
+
+        </div>
+        <div id="page2">
+
+            <div class="blog-nav">
+
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <h1>RARHAHRHAH</h1>
+                    <span
+                        style="background-color: skyblue; display: inline-block; color: white; padding: 0 6px; border-radius: 4px">Now
+                        with video technology!</span>
+                </div>
+                <p style="margin-top: 0px">Welcome to my archive of events !! These are organized by the date the picture was taken, not the time
+                I put them in to this website. Although I might include that as a footnote.</p>
+
+                <div class="blog-item">
+                    <span class="date">2023-4--</span>
+                    <a class="topic" href="/photog.html?page=6">Miscellanous</a>
+                    <span class="date">1</span>
+                </div>
+
+                <div class="blog-item"></div>
+                <div class="blog-item">
+                    <span>
+                        <span style="font-family: Arial">☆</span> 
+                        Specific category
+                        <span style="font-family: Arial">☆</span> 
+                    </span>
+                </div>
+
+                <div class="blog-item">
+                    <span class="date">2013----</span>
+                    <a class="topic" href="/photog.html?page=6">Toy camera</a>
+                    <span class="date">1</span>
+                </div>
+
+                <div class="blog-item">
+                    <span class="date">2020-5--</span>
+                    <a class="topic" href="/photog.html?page=6">All those covid days</a>
+                    <span class="date">1</span>
+                </div>
+
+                <div class="blog-item">
+                    <span class="date">2023-5--</span>
+                    <a class="topic" href="/photog.html?page=6">Washington, DC</a>
+                    <span class="date">1</span>
+                </div>
+
+                <div class="blog-item">
+                    <span class="date">2023-12--</span>
+                    <a class="topic" href="/photog.html?page=6">Las Vegas</a>
+                    <span class="date">1</span>
+                </div>
+
+                <div class="blog-item">
+                    <span class="date">2024-6--</span>
+                    <a class="topic" href="/photog.html?page=6">Anhui, Japan, Taiwan</a>
+                    <span class="date">15</span>
+                </div>
+
+                <div class="blog-item">
+                    <span class="date">2025-6--</span>
+                    <a class="topic" href="/photog.html?page=6">San Diego</a>
+                    <span class="date">30</span>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 

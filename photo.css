@@ -21,6 +21,14 @@ button.tableofcontents {
 
   font-size: 24px;
   padding-right: 24px;
+
+  background-color: rgba(29, 154, 173, 0.535);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+button.tableofcontents:hover {
+  transform: translateX(-10px);
 }
 
 .blog-nav {
@@ -151,13 +159,13 @@ word-break: break-all;
   border: 2px solid lightblue;
   height: 800px;
   width: 1200px;
-  left: 14%;
+  left: 10%;
 
   display: flex;
   flex-direction: row;
 
   z-index: 11000;
-  position: absolute;
+  position: relative;
 }
 
 #page1 {
@@ -179,12 +187,11 @@ word-break: break-all;
 }
 
 .tabs {
-  background-color: pink;
   height: 400px;
   width: 40px;
 
   position: absolute;
-  left: calc(14% - 40px);
+  left: calc(10% - 40px);
   top: 10%;
   z-index: 0;
 
