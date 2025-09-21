@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     sidebar.innerHTML = `
     <div style="display: flex; flex-direction: row; justify-content: space-between">
       <h2 style="padding-bottom: 10px;">Sitemap</h2>
-      <a href="/">Home</a>
+      <a href="">Home</a>
     </div>
 
     <div class="navlink-s">
-      <a class="navlink" href="/index.html">Home</a>
-      <a class="navlink" href="/about.html">About</a>
-      <a class="navlink" href="/bloggy.html">Bloggy</a>
-      <a class="navlink" href="/photog.html">Photographs ^o^</a>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="bloggy.html">Bloggy</a>
+      <a class="navlink" href="photog.html">Photographs ^o^</a>
       <a class="navlink">Drawing</a>
       <a class="navlink">Awesome cool stuff shrines</a>
       <a class="navlink">Room</a>
