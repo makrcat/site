@@ -107,6 +107,13 @@ a:visited {
   border-radius: 2px;
 }
 
+.photo video { /* YAYYYYYY I'm very happy with this! */
+  object-fit: contain;
+  background-color: black;
+  object-position: center center;
+  aspect-ratio: 1 / 1;
+}
+
 .photo div {
   overflow: scroll;
   max-height: 300px;
@@ -166,9 +173,21 @@ a:visited {
 }
   */
 
-.photo span.date {
+.photo span.head {
   margin-top: -4px;
   margin-bottom: 2px;
+}
+
+.date {
+  background-color: lightblue;
+  margin: auto;
+  color: white;
+  width: fit-content;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .book>div {
@@ -199,6 +218,8 @@ a:visited {
   width: 50%;
   padding: 20px 40px;
   z-index: 9;
+
+  overflow: scroll;
 }
 
 .tabs {

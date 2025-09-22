@@ -93,11 +93,28 @@ window.onload = function () {
 
 function loadPageImages(bookpagesetEL) {
     const imgs = bookpagesetEL.querySelectorAll("img[data-src]");
+    console.log("bookpagesetEL:", bookpagesetEL);
+    console.log("videos found:", bookpagesetEL.querySelectorAll("video"));
+
+
     imgs.forEach(img => {
         img.src = img.dataset.src; // load
         img.removeAttribute("data-src"); // clean ?
     });
+
+    const vids = bookpagesetEL.querySelectorAll("video");
+    vids.forEach(vid => {
+
+        const source = vid.querySelector("source");
+        source.src = source.dataset.src;
+        source.removeAttribute("data-src");
+
+        console.log(source.src);
+
+        vid.load();
+    });
 }
+
 
 window.addEventListener('keydown', (event) => {
     console.log("Pressed:", event.key);
