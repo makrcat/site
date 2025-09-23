@@ -98,20 +98,23 @@ function loadPageImages(bookpagesetEL) {
 
 
     imgs.forEach(img => {
-        img.src = img.dataset.src; // load
-        img.removeAttribute("data-src"); // clean ?
+        if (img.dataset.src) {
+            img.src = img.dataset.src; // load
+            img.removeAttribute("data-src");
+        }
+
     });
 
     const vids = bookpagesetEL.querySelectorAll("video");
     vids.forEach(vid => {
 
         const source = vid.querySelector("source");
-        source.src = source.dataset.src;
-        source.removeAttribute("data-src");
 
-        console.log(source.src);
-
-        vid.load();
+        if (source.dataset.src) {
+            source.src = source.dataset.src;
+            source.removeAttribute("data-src");
+            vid.load();
+        }
     });
 }
 

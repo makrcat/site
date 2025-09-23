@@ -5,6 +5,18 @@
 
 
 
+.title {
+    margin: 0 auto;
+    text-decoration: underline wavy skyblue 3px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 6px;
+    font-family: Arial;
+    letter-spacing: 0.1em;
+    color: rgb(38, 91, 111);
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
 /* nav */
 a img {
     display: block;
@@ -118,7 +130,7 @@ pre {
 }
 
 .bottom-button:hover {
-    background-color:rgba(228, 171, 180, 0.2);
+    background-color: rgba(228, 171, 180, 0.2);
 }
 
 
